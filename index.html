@@ -5,9 +5,56 @@
 </head>
 
 <style>
-img {
-  border-radius: 8px;
+
+h3 {text-align: right; background-color:#FFC540; font-family: Papyrus, Copperplate;  }
+
+div.gallery {
+  border: 1px solid #ccc;
 }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h2   {background-color:#FFC540; font-family: Papyrus, Copperplate, fantasy;}
 body {background-color: #0776A0;}
 h1   {background-color:#FFB600; color:#015367; font-family:Copperplate, Papyrus, fantasy;text-align:center;}
@@ -27,11 +74,12 @@ td{background-color: #FFD473;
 
 <p>Meastra: Miss Georgina</p>
 
+<img src="imagenes/1.jpg" alt="Foto de miss Georgina">
+
 <h2>Pasatiempos</h2>
 
 <p>El pasatiempo favorito de Miss Georgina es hacer deporte</p>
 
-<img src="https://userscontent2.emaze.com/images/90f2db90-2c0c-4c29-86bd-35b65249fa42/c4987b4547c2afbe749168df67448958.png" alt="Paris" width="300" height="300">
 
 <h2>¿Tiene usted alguna mascota, animal de preferencia?</h2>
 
@@ -95,7 +143,7 @@ td{background-color: #FFD473;
  <caption>TABLA DE GUSTOS</caption>
   <tr>
     <th>¿Comida favorita?</th>
-    <th>Musica</th>
+    <th>Música</th>
     <th>Artista favorito</th>
     <th>Gustos de vehiculos.</th>
     <th>Materia que mas le gusto cuando estudio.</th>
@@ -119,6 +167,46 @@ td{background-color: #FFD473;
     
   </tr>
 </table>
+
+<h3>Galeria de Fotos:</h3>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://www.mundoprimaria.com/wp-content/uploads/2020/07/deporte.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Deportes</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://www.guatemala.com/fotos/201706/80s-885x500.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Música de los 80 y 90</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://www.hotelconventosantacatalina.com/wp-content/uploads/2020/10/A1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">La Antigua Guatemala</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://rcdn.rolloid.net/uploads/2016/06/Este-Perro-hace-amigos-a-dondequiera-que-vaya-Pero-cuando-se-encontro-a-esta-timida-cabrita-banner.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Mascotas de preferencia</div>
+  </div>
+</div>
+
 
 </body>
 </html>
